@@ -9,7 +9,7 @@ const Plans = () => {
                 '3 days/month',
                 '30 min/session',
                 'Jump Rope',
-                'trademil',
+                'Treadmill',
                 'Cancel any time'
             ]
         },
@@ -19,7 +19,7 @@ const Plans = () => {
                 '15 days/month',
                 '60 min/session',
                 'Weights',
-                'Dumbbels',
+                'Dumbbells',
                 'Cancel any time'
             ]
         },
@@ -36,7 +36,7 @@ const Plans = () => {
     ]
     return (
         <div>
-            <h2 className='text-3xl font-bold'>Subscription Plans</h2>
+            <h2 className='text-3xl font-bold mt-5'>Subscription Plans</h2>
             <div className='grid md:grid-cols-3 gap-3 mt-4'>
                 {
                     planOptions.map(option => <Plan
