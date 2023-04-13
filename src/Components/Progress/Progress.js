@@ -1,11 +1,11 @@
 import React from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { LineChart, Line, XAxis, YAxis,  Tooltip, Legend  } from 'recharts';
 
 const Progress = () => {
     const data = [
         {
             day: 'Day 1',
-            calorie: 4000,
+            calorie: 1800,
             time: 2400,
             worth: 2400,
         },
@@ -48,11 +48,11 @@ const Progress = () => {
     ];
 
     return (
-        <div>
+        <div >
             <h1 className='text-3xl font-bold mt-5'>Your Fitness Growth Status </h1>
-            <div className=''>
+            <div className=' grid place-content-center' >
             <LineChart
-                width={900}
+                width={700}
                 height={300}
                 data={data}
                 margin={{
