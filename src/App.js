@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css';
 import Cart from './Components/Cart/Cart';
 import Courses from './Components/Courses/Courses';
@@ -10,14 +11,25 @@ import Progress from './Components/Progress/Progress';
 
 
 function App() {
+  const [exerciseTime, setExerciseTime] = useState(0);
+
+  const addToCart = () =>
+  {
+    
+  }
+
+  const addToList = (time) => {
+    setExerciseTime(time);
+  }
+
   return (
-    <div className="App flex">
-      <div>
-        <Cart></Cart>
+    <div className="App flex flex-row ">
+      <div className='basis-1/4'>
+        <Cart exerciseTime={exerciseTime}></Cart>
       </div>
-      <div>
+      <div className='basis-3/4'>
         <NavBar></NavBar>
-        <Courses></Courses>
+        <Courses addToList={addToList}></Courses>
         <Plans></Plans>
         <Progress></Progress>
 

@@ -1,26 +1,26 @@
 [
   {
     "id": "643656dafd338f49c4f6daa4",
-    "fee": "$75",
+    "fee": "$25",
     "picture": "https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "age": 32,
+    "time": 100,
     "name": "Weight Lifting",
     "about": "Proident cupidatat qui ullamco excepteur culpa occaecat enim amet voluptate voluptate nulla nulla officia. \r\n"
   },
   {
     "id": "643656da3c98dfbd1c46fa64",
-    "fee": "$90",
+    "fee": "$20",
     "picture": "https://hips.hearstapps.com/hmg-prod/images/treadmill-testing-0367-1578930314.jpg?crop=1.00xw:0.848xh;0,0.0171xh&resize=1920:*",
-    "age": 32,
+    "time": 200,
     "name": "Running",
-    "about": "Veniam ea incididunt magna enim minim proident incididunt occaecat nulla irure laborum. Est veniam ullamco nostrud velit elit elit. Quis anim sunt eu exercitation cupidatat tempor. Voluptate velit officia minim duis esse ipsum. \r\n"
+    "about": "Veniam ea incididunt magna enim minim proident incididunt occaecat nulla irure laborum. Est veniam ullamco nostrud velit elit elit \r\n"
   },
   {
     "id": "643656dadc04bcef92bed8cf",
-    "fee": "$50",
+    "fee": "$15",
     "picture": "https://assets.gqindia.com/photos/5cee7eb00379a73d25177759/4:3/w_1440,h_1080,c_limit/Pushup.jpg",
-    "age": 34,
+    "time": 150,
     "name": "Push up",
-    "about": "Eu in reprehenderit cillum labore anim velit do. Cillum anim incididunt commodo consectetur anim nostrud excepteur sunt veniam anim. Laborum amet est minim eu.\r\n"
+    "about": "Eu in reprehenderit cillum labore anim velit do.\r\n"
   }
 ]

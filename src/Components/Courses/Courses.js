@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Course from '../Course/Course';
 
-const Courses = () => {
+const Courses = (props) => {
 
     const [courses, setCourses] = useState([]);
 
@@ -11,16 +11,19 @@ const Courses = () => {
             .then(data => setCourses(data))
     }, []);
 
+    const {addToList} = props;
+
     return (
         <div>
-            <h1 className='text-5xl font bold bg-cyan-200 text-black p-3' >Welcome to The Fitverse</h1>
-            <div className='grid md:grid-cols-3 gap-3'>
+            <h1 className='text-5xl font bold bg-cyan-200 text-black p-3 py-10' >Welcome to The Fitverse</h1>
+            <div className='grid md:grid-cols-3 gap-3 mt-4'>
                 {
                     courses.map(course => <Course
                         key={course.id}
                         course={course}
+                        addToList={addToList}
                     ></Course>)
-                }
+                } 
             </div>
 
 

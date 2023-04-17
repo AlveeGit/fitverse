@@ -5,43 +5,43 @@ const Progress = () => {
     const data = [
         {
             day: 'Day 1',
-            calorie: 1800,
+            calorie_Burn: 1800,
             time: 2400,
             worth: 2400,
         },
         {
             day: 'Day 2',
-            calorie: 3000,
+            calorie_Burn: 3000,
             time: 1398,
             worth: 2210,
         },
         {
             day: 'Day 3',
-            calorie: 2000,
+            calorie_Burn: 2000,
             time: 9800,
             worth: 2290,
         },
         {
             day: 'Day 4',
-            calorie: 2780,
+            calorie_Burn: 2780,
             time: 3908,
             worth: 2000,
         },
         {
             day: 'Day 5',
-            calorie: 1890,
+            calorie_Burn: 1890,
             time: 4800,
             worth: 2181,
         },
         {
             day: 'Day 6',
-            calorie: 2390,
+            calorie_Burn: 2390,
             time: 3800,
             worth: 2500,
         },
         {
             day: 'Day 7',
-            calorie: 3490,
+            calorie_Burn: 3490,
             time: 4300,
             worth: 2100,
         },
@@ -66,7 +66,7 @@ const Progress = () => {
                 <YAxis />
                 <Tooltip />
                 <Legend />
-                <Line type="monotone" dataKey="calorie" stroke="#8884d8" activeDot={{ r: 8 }} />
+                <Line type="monotone" dataKey="calorie_Burn" stroke="#8884d8" activeDot={{ r: 8 }} />
 
             </LineChart>
             </div>
