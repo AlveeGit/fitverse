@@ -19,7 +19,7 @@ const Plans = (props) => {
                 '$9.99/month ',
                 '15 days/month',
                 '60 min/session',
-                'Weights',
+                'Weight Bars',
                 'Dumbbells',
                 'Cancel any time'
             ]
@@ -29,8 +29,8 @@ const Plans = (props) => {
                 '$19.99/month ',
                 '30 days/month',
                 '120 min/session',
-                'all equipments',
-                'Snacks',
+                'All equipments',
+                'Free Snacks',
                 'Cancel any time'
             ]
         },
@@ -38,7 +38,7 @@ const Plans = (props) => {
     return (
         <div>
             <h2 className='text-3xl font-bold mt-5'>Subscription Plans</h2>
-            <div className='grid md:grid-cols-3 gap-3 mt-4'>
+            <div className='grid md:grid-cols-3 gap-1 mt-4'>
                 {
                     planOptions.map(option => <Plan
                         key={option.id}

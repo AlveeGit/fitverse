@@ -15,8 +15,8 @@ const Courses = (props) => {
 
     return (
         <div>
-            <h1 className='text-5xl font bold bg-sky-400 text-black p-3 py-10' >Welcome to The Fitverse</h1>
-            <div className='grid md:grid-cols-3 gap-3 mt-4'>
+            <h1 className='text-5xl font bold bg-sky-400 text-black p-3 py-10 border-4 border-double border-teal-100' >Welcome to The Fitverse</h1>
+            <div className='grid md:grid-cols-3 gap-1 mt-4'>
                 {
                     courses.map(course => <Course
                         key={course.id}

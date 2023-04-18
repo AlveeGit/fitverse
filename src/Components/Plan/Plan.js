@@ -5,7 +5,7 @@ const Plan = (props) => {
     const {addToCart, option} = props;
     const { features } = option;
     return (
-        <div className='bg-sky-400 m-3 rounded-md p-3'>
+        <div className='bg-sky-400  rounded-md p-3'>
             <div>
                 <h3>
                     <span className='text-6xl font-bold text-white'>{option.price}</span>

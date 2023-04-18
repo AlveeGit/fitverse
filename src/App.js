@@ -19,21 +19,14 @@ function App() {
     setCart(price);
   }
 
-  const addToList = (time, fee) => {
+  const addToList = (time) => {
     let newTime = exerciseTime + time ;
-    setExerciseTime(newTime);
-    let newCart = parseFloat(cart + fee);
-    setCart(newCart); 
+    setExerciseTime(newTime); 
   }
 
   return (
     <div className="App flex flex-row relative">
-      <div className='basis-1/4'>
-        <Cart 
-        cart={cart} 
-        exerciseTime={exerciseTime}
-        ></Cart>
-      </div>
+      
       <div className='basis-3/4'>
         <NavBar></NavBar>
         <Courses addToList={addToList}></Courses>
@@ -41,6 +34,12 @@ function App() {
         <Progress></Progress>
 
         <Footer></Footer>
+      </div>
+      <div className='basis-1/4'>
+        <Cart 
+        cart={cart} 
+        exerciseTime={exerciseTime}
+        ></Cart>
       </div>
     </div>
   );
