@@ -12,25 +12,32 @@ import Progress from './Components/Progress/Progress';
 
 function App() {
   const [exerciseTime, setExerciseTime] = useState(0);
+  const [cart, setCart] = useState(0);
 
-  const addToCart = () =>
+  const addToCart = (price) =>
   {
-    
+    setCart(price);
   }
 
-  const addToList = (time) => {
-    setExerciseTime(time);
+  const addToList = (time, fee) => {
+    let newTime = exerciseTime + time ;
+    setExerciseTime(newTime);
+    let newCart = parseFloat(cart + fee);
+    setCart(newCart); 
   }
 
   return (
-    <div className="App flex flex-row ">
+    <div className="App flex flex-row relative">
       <div className='basis-1/4'>
-        <Cart exerciseTime={exerciseTime}></Cart>
+        <Cart 
+        cart={cart} 
+        exerciseTime={exerciseTime}
+        ></Cart>
       </div>
       <div className='basis-3/4'>
         <NavBar></NavBar>
         <Courses addToList={addToList}></Courses>
-        <Plans></Plans>
+        <Plans addToCart={addToCart}></Plans>
         <Progress></Progress>
 
         <Footer></Footer>

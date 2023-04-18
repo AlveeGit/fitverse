@@ -1,11 +1,12 @@
 import React from 'react';
 import Plan from '../Plan/Plan';
 
-const Plans = () => {
+const Plans = (props) => {
+    const {addToCart} = props;
     const planOptions = [
         {
-            id: 1, name: 'Free', price: 0, features: [
-                '100% free ',
+            id: 1, name: 'Fresh', price: 0.99, features: [
+                'Almost free ',
                 '3 days/month',
                 '30 min/session',
                 'Jump Rope',
@@ -15,7 +16,7 @@ const Plans = () => {
         },
         {
             id: 2, name: 'Standard', price: 9.99, features: [
-                '$9.99 ',
+                '$9.99/month ',
                 '15 days/month',
                 '60 min/session',
                 'Weights',
@@ -25,7 +26,7 @@ const Plans = () => {
         },
         {
             id: 3, name: 'Premium', price: 19.99, features: [
-                '$19.99 ',
+                '$19.99/month ',
                 '30 days/month',
                 '120 min/session',
                 'all equipments',
@@ -42,6 +43,7 @@ const Plans = () => {
                     planOptions.map(option => <Plan
                         key={option.id}
                         option={option}
+                        addToCart={addToCart}
                     >
                     </Plan>)
                 }

@@ -16,25 +16,25 @@ const Session = (props) => {
     };
 
     return (
-        <div>
-            <h2 className='text-2xl font-semibold'>Session Plan</h2>
-            <p>Add a break</p>
-            <div className='bg-slate-300  rounded-full py-2'>
+        <div className='bg-sky-400 m-1 rounded-md'>
+            <h2 className='text-3xl font-bold mt-5'>Session Plan</h2>
+            <p className='font-semibold mt-5'>Add a break</p>
+            <div className='bg-slate-300  rounded-md py-2 '>
                 {
                     breaks.map(singleBreak =>
-                        <button key={singleBreak.id} onClick={() => sessionBreak(singleBreak.time)} className='p-1 mr-2 rounded-full bg-slate-400 '>{singleBreak.time}s</button>
+                        <button key={singleBreak.id} onClick={() => sessionBreak(singleBreak.time)} className='p-1 mr-2 rounded-full bg-slate-400 hover:bg-slate-200'>{singleBreak.time}s</button>
                     )
                 }
 
             </div>
 
-            <p>Exercise details</p>
-            <div className='bg-slate-300  rounded-full flex justify-between p-2 '>
+            <p className='font-semibold mt-3'>Exercise details</p>
+            <div className='bg-slate-300  rounded-md flex justify-between p-2 '>
                <p>Exercise Time :</p> <p className=''><span>{exerciseTime}</span> seconds</p>
             </div>
 
-            <p>Session Break</p>
-            <div className='bg-slate-300  rounded-full flex justify-between p-2 '>
+            <p className='font-semibold mt-3'>Session Break</p>
+            <div className='bg-slate-300  rounded-md flex justify-between p-2 '>
                <p>Break Time :</p> <p className=''><span>{breakTime}</span> seconds</p>
             </div>
 

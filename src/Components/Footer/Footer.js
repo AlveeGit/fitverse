@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div className='p-3 m-5 font-bold'>
+        <div className='font-bold bottom-0 inset-x-0 absolute'>
             <p>@CopyRight Protected</p>
         </div>
     );

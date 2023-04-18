@@ -1,10 +1,11 @@
 import React from 'react';
 import Feature from '../Feature/Feature';
 
-const Plan = ({option}) => {
+const Plan = (props) => {
+    const {addToCart, option} = props;
     const { features } = option;
     return (
-        <div className='bg-blue-400 m-3 rounded-md p-3'>
+        <div className='bg-sky-400 m-3 rounded-md p-3'>
             <div>
                 <h3>
                     <span className='text-6xl font-bold text-white'>{option.price}</span>
@@ -18,7 +19,8 @@ const Plan = ({option}) => {
                     feature={feature}
                 ></Feature>)
             }
-            <button className='bg-gray-500 mt-4 w-full rounded-md py-2 text-white font-bold'>Buy Now</button>
+            <button onClick={() => addToCart(option.price)} className='bg-gray-500 
+            hover:bg-sky-900 mt-4 w-full rounded-md py-2 text-white font-bold'>Buy Now</button>
         </div>
     );
 };

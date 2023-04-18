@@ -48,8 +48,8 @@ const Progress = () => {
     ];
 
     return (
-        <div >
-            <h1 className='text-3xl font-bold mt-5'>Your Fitness Growth Status </h1>
+        <div className='mb-10'>
+            <h1 className='text-3xl font-bold mt-5 mb-7'>Your Fitness Growth Status </h1>
             <div className=' grid place-content-center' >
             <LineChart
                 width={700}

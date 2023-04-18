@@ -1,26 +1,26 @@
 [
   {
     "id": "643656dafd338f49c4f6daa4",
-    "fee": "$25",
+    "fee": 25,
     "picture": "https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "time": 100,
     "name": "Weight Lifting",
-    "about": "Proident cupidatat qui ullamco excepteur culpa occaecat enim amet voluptate voluptate nulla nulla officia. \r\n"
+    "about": "The Benefits of Lifting Weights Every Day. Generally, lifting weights daily can help make your muscles and bones stronger. It also improves your body endurance and provides you with better body composition.\r\n"
   },
   {
     "id": "643656da3c98dfbd1c46fa64",
-    "fee": "$20",
+    "fee": 20,
     "picture": "https://hips.hearstapps.com/hmg-prod/images/treadmill-testing-0367-1578930314.jpg?crop=1.00xw:0.848xh;0,0.0171xh&resize=1920:*",
     "time": 200,
     "name": "Running",
-    "about": "Veniam ea incididunt magna enim minim proident incididunt occaecat nulla irure laborum. Est veniam ullamco nostrud velit elit elit \r\n"
+    "about": "Running can give you a longer life, better sleep, improved immunity, mood and good got knees and lower back. Running improves cardiovascular health, builds muscular strength, increases bone density. \r\n"
   },
   {
     "id": "643656dadc04bcef92bed8cf",
-    "fee": "$15",
+    "fee": 15,
     "picture": "https://assets.gqindia.com/photos/5cee7eb00379a73d25177759/4:3/w_1440,h_1080,c_limit/Pushup.jpg",
     "time": 150,
     "name": "Push up",
-    "about": "Eu in reprehenderit cillum labore anim velit do.\r\n"
+    "about": "Push-ups offer many health benefits, including Burning calories, protecting your shoulders and lower back. Improving your balance and posture, flexibility, performance in sports and athletic activities\r\n"
   }
 ]
