@@ -38,7 +38,7 @@ const Plans = (props) => {
     return (
         <div>
             <h2 className='text-3xl font-bold mt-5'>Subscription Plans</h2>
-            <div className='grid md:grid-cols-3 gap-1 mt-4'>
+            <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-1 mt-4'>
                 {
                     planOptions.map(option => <Plan
                         key={option.id}
